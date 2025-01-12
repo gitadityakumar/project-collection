@@ -1,3 +1,4 @@
+import Features from "./section/Features"
 import Header from "./section/header"
 import Hero from "./section/Hero"
 const App = () => {
@@ -5,6 +6,8 @@ const App = () => {
     <main className="overflow-hidden">
       <Header/>
       <Hero/>
+      <Features/>
+      
 
     </main>
   )
