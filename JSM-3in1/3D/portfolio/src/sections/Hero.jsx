@@ -5,6 +5,10 @@ import CanvasLoader from "../components/CanvasLoader"
 // import { Leva, useControls } from 'leva'
 import { useMediaQuery } from "react-responsive"
 import {calculateSizes} from "../constants/index"
+import Target from "../components/Target"
+import ReactLogo from "../components/ReactLogo"
+import Ring from "../components/Ring"
+import Cube from "../components/Cube"
 
 const Hero = () => {
   // const x = useControls('HackerRoom', {
@@ -41,6 +45,12 @@ const Hero = () => {
 
               rotation={[0,-Math.PI,0]}
             />
+            <group>
+              <Target position={sizes.targetPosition  }/>
+              <ReactLogo position={sizes.reactLogoPosition} />
+              <Cube position={sizes.cubePosition} /> 
+              <Ring  position={sizes.ringPosition}/>
+            </group>
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
