@@ -249,13 +249,15 @@ export const myProjects = [
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : isTablet ? 0.04 : 0.08 ,
-    deskPosition: isSmall ? [0.5, -4.5, 0] : isMobile ? [0.5, -4.5, 0] : isTablet ? [0.4, -1, -5.5] : [0.3, -9, -6.5],
-    cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [7, -2, 0],
-    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [6, 1, 0],
-    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-11, 10, 0] : [-13, 8, 0],
-    targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -10, -10],
+    deskPosition: isSmall ? [0.5, -4.5, 0] : isMobile ? [0.5, -4.5, 0] : isTablet ? [0.4, -1, -5.5] : [0.3, -10, -6.5],
+    cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [8, -4, 0],
+    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [10, 1, 0],
+    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-11, 10, 0] : [-30, 9, 0],
+    targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-7, -5, 1],
   };
 };
+
+
 
 export const workExperiences = [
   {

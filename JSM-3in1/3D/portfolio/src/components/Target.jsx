@@ -1,6 +1,7 @@
 import { useGLTF } from '@react-three/drei';
 import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
+// import { AxesHelper } from "three";
 import gsap from 'gsap';
 
 const Target = (props) => {
@@ -19,8 +20,9 @@ const Target = (props) => {
   });
 
   return (
-    <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.5}>
-      <primitive object={scene} />
+    <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={0.8}>
+      <primitive object={scene}  />
+      {/* <primitive object={new AxesHelper(5)}/> */}
     </mesh>
   );
 };

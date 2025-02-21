@@ -22,8 +22,8 @@ const Cube = ({ ...props }) => {
         repeatDelay: 0.5,
       })
       .to(cubeRef.current.rotation, {
-        y: hovered ? '+=2' : `+=${Math.PI * 2}`,
-        x: hovered ? '+=2' : `-=${Math.PI * 2}`,
+        y: hovered ? '+=1' : `+=${Math.PI * 3}`,
+        x: hovered ? '+=1' : `-=${Math.PI * 3}`,
         duration: 2.0,
         stagger: {
           each: 0.15,
@@ -33,7 +33,7 @@ const Cube = ({ ...props }) => {
 
   return (
     <Float floatIntensity={2}>
-      <group position={[9, -4, 0]} rotation={[2.6, 0.8, -1.8]} scale={0.3} dispose={null} {...props}>
+      <group position={[9, -4, 0]} rotation={[2.6, 0.8, -1.8]} scale={0.4} dispose={null} {...props}>
         <mesh
           ref={cubeRef}
           castShadow
