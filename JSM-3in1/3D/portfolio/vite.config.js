@@ -3,6 +3,14 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  esbuild: {
+    target: 'esnext' // Allows top-level await
+  },
+  build: {
+    rollupOptions: {
+      external: ['three']
+    }
+  },
   server: {
     host: true, // or your specific IP
     hmr: {
